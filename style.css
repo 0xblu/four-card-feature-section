@@ -1,0 +1,122 @@
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.main {
+  background-color: var(--very-light-gray);
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.title {
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.reliable {
+  padding: 40px 0 10px 0;
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--very-dark-blue);
+}
+
+.description {
+  padding-top: 40px;
+  color: var(--very-dark-blue);
+  margin: 0px 40px;
+  font-size: 17px;
+  text-align: center;
+  width: 24rem;
+}
+
+.supervisor {
+  border-radius: 8px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-top: 4px solid var(--cyan);
+  max-width: 400px;
+  margin: 30px;
+  font-size: 20px;
+}
+
+.team-builder {
+  border-radius: 8px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-top: 4px solid var(--red);
+  max-width: 500px;
+  max-width: 400px;
+  margin: 30px;
+  font-size: 20px;
+}
+
+.karma {
+  border-radius: 8px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-top: 4px solid var(--orange);
+  max-width: 400px;
+  margin: 30px;
+  font-size: 20px;
+}
+
+.calculator {
+  border-radius: 8px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-top: 4px solid var(--Blue);
+  max-width: 400px;
+  margin: 30px;
+  font-size: 20px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+p {
+  color: var(--grayish-blue);
+  padding-bottom: 30px;
+}
+
+.icon {
+  margin-left: 282px;
+}
+
+@media screen and (min-width: 767px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+}
